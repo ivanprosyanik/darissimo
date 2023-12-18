@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <title> Darrisimo | Головна</title>
+</head>
+<body class="body" id="body">
+  <div class="wrapper">
+
+<header class="header">
+  <div class="container">
+    <div class="header__top">
+      <a class="logo header__logo" href="index.html">
+        <img class="logo__img" src="images/sprite.svg#logo" alt="Logo" width="175" height="50">
+      </a>
+      <search class="header__search">
+        <form class="header__form" action="#">
+          <input class="header__field" type="text" placeholder="Пошук продуктів">
+          <button class="header__form-btn icon icon--search" type="submit"></button>
+        </form>
+      </search>
+      <ul class="header__actions">
+        <li class="header__actions-item">
+          <a class="header__actions-link icon icon--location" href="#"></a>
+        </li>
+        <li class="header__actions-item">
+          <button class="header__actions-link icon icon--user" id="user-btn" type="button"></button>
+          <div class="user-modal user">
+            <button class="user-modal__close icon icon--close" id="user-close" type="button"></button>
+            <h2 class="user-modal__title">Мій профіль</h2>
+            <form class="user-modal__form user__form" action="#">
+              <label class="user-modal__label user__label">
+                <p>Email<span>*</span></p>
+                <input class="user-modal__field user__field" type="email" required placeholder="Email">
+              </label>
+              <label class="user-modal__label user__label">
+                <p>Пароль<span>*</span></p>
+                <input class="user-modal__field user__field" type="password" required placeholder="Пароль">
+              </label>
+              <a class="user-modal__link" href="reset-password.html">Відновити пароль</a>
+              <div class="user-modal__btns">
+                <button class="user-modal__login" type="submit">Увійти</button>
+                <p>Або</p>
+                <a class="user-modal__registr" href="autorization.html">Зареєструватись</a>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li class="header__actions-item">
+          <a class="header__actions-link header__actions-wish icon icon--heart" href="#">
+            <span id="wish--span">0</span>
+          </a>
+        </li>
+        <li class="header__actions-item">
+          <a class="header__actions-link header__actions-cart icon icon--cart" href="#">
+            <span id="cart--span">1</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="header__bottom">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="novelty-page.html" >Новинки</a>
+            <div class="header__submenu submenu">
+              <ul class="submenu__list">
+                <li class="submenu__item">
+                  <a class="submenu__link submenu__link--active" href="novelty-page.html" >Новинки</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="#" class="submenu__link">Різдвяні прикраси</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="#" class="submenu__link">Різдвяні гуртки та кераміка</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="#" class="submenu__link">Адвент</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="#" class="submenu__link">Великі ігри</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="#" class="submenu__link">Подарунки любителям гаджетів</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="#" class="submenu__link">Подарунки, про існування яких ви не знали</a>
+                </li>
+              </ul>
+              <div class="submenu__inner" style="background-image: url('./images/dist/submenu/new-in.webp');">
+                <div class="submenu__offer">
+                  <h2 class="submenu__title title">Новинки</h2>
+                  <div class="submenu__text">
+                    <p>Відкрийте для себе всі наші новинки!</p>
+                  </div>
+                  <button class="submenu__btn btn btn--accent">Замовити зараз!</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Різні</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Рiздво</a>
+            <div class="header__submenu submenu">
+              <ul class="submenu__list submenu__list--grid">
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Різдвяні прикраси</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Дрібнички</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Сервірування святкового столу</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Різдвяні гуртки та кераміка</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Ялинкові прикраси</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Декоративні предмети</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Різдвяне освітлення</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Різдвяна зустріч</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Різдвяна вечірка</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Різдвяне вбрання</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Кухня та випічка</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Різдвяна їжа</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Адвент</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Адвент-календарі</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="submenu__inner" style="background-image: url('./images/dist/submenu/xmas.webp');">
+                <div class="submenu__offer">
+                  <h2 class="submenu__title title">Різдвяні подарунки</h2>
+                  <div class="submenu__text">
+                    <p>
+                      Підстрижіть ялинку та прикрасьте коридори, купіть нашу популярну колекцію різдвяних дрібничок!
+                    </p>
+                  </div>
+                  <button class="submenu__btn btn btn--accent">Замовити зараз!</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Подарунки</a>
+            <div class="header__submenu submenu">
+              <ul class="submenu__list submenu__list--grid">
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Подарунки для дорослих</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Краса та догляд за собою</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Гаджети та ігри</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Подарунки для будинку</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Великі ігри</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Дитячі подарунки</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Дитячі гаджети та ігри</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">М'яка іграшка</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Путівники з подарунків</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Подарунки для домашніх тварин</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Подарунки для геймерів</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Подарунки для підлітків</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Подарунки, про існування яких <br> ви не знали</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="submenu__inner"
+                style="background-image: url(./images/dist/submenu/gifts.jpg); background-image: image-set(url('./images/dist/submenu/gifts.avif') type('image/avif'),  url('./images/dist/submenu/gifts.webp') type('image/webp'));">
+                <div class="submenu__offer">
+                  <h2 class="submenu__title title">Нові надходження дрібничок</h2>
+                  <div class="submenu__text">
+                    <p>
+                      Отримайте все найцікавіше
+                    </p>
+                  </div>
+                  <button class="submenu__btn btn btn--accent">Замовити зараз!</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Мистецтво та ремесла</a>
+            <div class="header__submenu submenu">
+              <ul class="submenu__list submenu__list--grid">
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Мистецтво</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Фарби та олівці</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Альбоми та полотна</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Ремесла</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Набори DIY</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Браслети дружби</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Стрічка, клей та наклейки</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Інші товари для рукоділля та DIY</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="submenu__inner"
+                style="background-image: url(./images/dist/submenu/art.jpg); background-image: image-set(url('./images/dist/submenu/art.avif') type('image/avif'),  url('./images/dist/submenu/art.webp') type('image/webp'));">
+                <div class="submenu__offer">
+                  <h2 class="submenu__title title">Новорічна прикраса своїми руками</h2>
+                  <div class="submenu__text">
+                    <p>
+                      Завітайте до нашого центру наборів для хобі та різдвяних прикрас своїми руками
+                    </p>
+                  </div>
+                  <button class="submenu__btn btn btn--accent">Замовити зараз!</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Випадки</a>
+            <div class="header__submenu submenu">
+              <ul class="submenu__list submenu__list--grid">
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Веселі події</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Речі, про існування яких ви не знали</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Фаворити</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Затишний дім</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Браслети дружби</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Iвент</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Різдво</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">День народження</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Хлопчисьник та дівич-вечір</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Новий рік</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="submenu__inner"
+                style="background-image: url(./images/dist/submenu/ivents.jpg); background-image: image-set(url('./images/dist/submenu/ivents.avif') type('image/avif'),  url('./images/dist/submenu/ivents.webp') type('image/webp'));">
+                <div class="submenu__offer">
+                  <h2 class="submenu__title title">Події</h2>
+                  <div class="submenu__text">
+                    <p>
+                      Купуйте наші улюблені товари для ідеального свята!
+                    </p>
+                  </div>
+                  <button class="submenu__btn btn btn--accent">Замовити зараз!</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Хата</a>
+            <div class="header__submenu submenu">
+              <ul class="submenu__list submenu__list--grid">
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Кухня</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Ланч-бокси та пляшки для пиття</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Гуртки та кераміка</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Сервіровка стола</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Серветки</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Ванна та догляд за собою</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Ванна білизна</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Організація ванної кімнати</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Догляд</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Декорації</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Свічки</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Освітлювальні прилади</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Вази та свічники</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="submenu__inner"
+                style="background-image: url(./images/dist/submenu/home.jpg); background-image: image-set(url('./images/dist/submenu/home.avif') type('image/avif'),  url('./images/dist/submenu/home.webp') type('image/webp'));">
+                <div class="submenu__offer">
+                  <h2 class="submenu__title title">Знайдіть дух Різдва</h2>
+                  <div class="submenu__text">
+                    <p>
+                      Наповніть свій будинок різдвяним духом червоного, зеленого та білого кольорів
+                    </p>
+                  </div>
+                  <button class="submenu__btn btn btn--accent">Замовити зараз!</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Їжа</a>
+            <div class="header__submenu submenu">
+              <ul class="submenu__list submenu__list--grid">
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Солодощі</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Шоколад</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Цукерки</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Випічка та кулінарія</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Посипання та глазур</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="submenu__inner"
+                style="background-image: url(./images/dist/submenu/food.jpg); background-image: image-set(url('./images/dist/submenu/food.avif') type('image/avif'),  url('./images/dist/submenu/food.webp') type('image/webp'));">
+                <div class="submenu__offer">
+                  <h2 class="submenu__title title">Наповніть різдвяні шкарпетки</h2>
+                  <div class="submenu__text">
+                    <p>
+                      Покладіть пару солодощів у різдвяну шкарпетку
+                    </p>
+                  </div>
+                  <button class="submenu__btn btn btn--accent">Замовити зараз!</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Iграшки та ігри</a>
+            <div class="header__submenu submenu">
+              <ul class="submenu__list submenu__list--grid">
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Iграшки</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Ляльки, фігурки та маленькі іграшки</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">М'яка іграшка</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Ігри</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Класичні настільні ігри</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Сімейні ігри</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Настільні спортивні ігри</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="submenu__inner"
+                style="background-image: url(./images/dist/submenu/games.jpg); background-image: image-set(url('./images/dist/submenu/games.avif') type('image/avif'),  url('./images/dist/submenu/games.webp') type('image/webp'));">
+                <div class="submenu__offer">
+                  <h2 class="submenu__title title">Наповніть різдвяні шкарпетки</h2>
+                  <div class="submenu__text">
+                    <p>
+                      Покладіть пару солодощів у різдвяну шкарпетку
+                    </p>
+                  </div>
+                  <button class="submenu__btn btn btn--accent">Замовити зараз!</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Вечірка та подарунки</a>
+            <div class="header__submenu submenu">
+              <ul class="submenu__list submenu__list--grid">
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Вечірка</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Різдвяна вечірка</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Різдвяне вбрання</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Святкові прикраси</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Колективні ігри</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Барні аксесуари</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Подарунки та приводи</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Обгортка, стрічка та листівки</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Подарунки для дорослих</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Подарунки для дітей</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">День народження</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Подарунки на Різдво</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Різдво</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="submenu__inner"
+                style="background-image: url(./images/dist/submenu/party.jpg); background-image: image-set(url('./images/dist/submenu/party.avif') type('image/avif'),  url('./images/dist/submenu/party.webp') type('image/webp'));">
+                <div class="submenu__offer">
+                  <h2 class="submenu__title title">Розважаймося!</h2>
+                  <div class="submenu__text">
+                    <p>
+                      Приходьте за сліпучими та супер-кумедними декораціями для різдвяної вечірки року
+                    </p>
+                  </div>
+                  <button class="submenu__btn btn btn--accent">Замовити зараз!</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Канцтовари</a>
+            <div class="header__submenu submenu">
+              <ul class="submenu__list submenu__list--grid">
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Канцелярські товари</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Фарби та олівці</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Альбоми та полотна</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Стрічка, клей та наклейки</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="submenu__inner"
+                style="background-image: url(./images/dist/submenu/study.jpg); background-image: image-set(url('./images/dist/submenu/study.avif') type('image/avif'),  url('./images/dist/submenu/study.webp') type('image/webp'));">
+                <div class="submenu__offer">
+                  <h2 class="submenu__title title">Зробіть свій рік найкращим</h2>
+                  <div class="submenu__text">
+                    <p>
+                      Почніть з нетерпінням чекати всього хорошого попереду
+                    </p>
+                  </div>
+                  <button class="submenu__btn btn btn--accent">Замовити зараз!</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Аксесуари</a>
+            <div class="header__submenu submenu">
+              <ul class="submenu__list submenu__list--grid">
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Модні аксесуари</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Рюкзаки та сумки</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Аксесуари для волосся та прикраси</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Брелоки</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Тапочки та шкарпетки</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Шоппери</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Інші модні аксесуари</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="submenu__item">
+                  <ul class="submenu__sublist">
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link submenu__link--active">Інші аксесуари</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Домашні тварини</a>
+                    </li>
+                    <li class="submenu__subitem">
+                      <a href="#" class="submenu__link">Окуляри для читання</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="submenu__inner"
+                style="background-image: url(./images/dist/submenu/accssesories.jpg); background-image: image-set(url('./images/dist/submenu/accssesories.avif') type('image/avif'),  url('./images/dist/submenu/accssesories.webp') type('image/webp'));">
+                <div class="submenu__offer">
+                  <h2 class="submenu__title title">Придбайте реквізит для вечірки</h2>
+                  <div class="submenu__text">
+                    <p>
+                      Ні Різдва без справжньої вечірки. Беріть реквізит та влаштовуйте вечірку
+                    </p>
+                  </div>
+                  <button class="submenu__btn btn btn--accent">Замовити зараз!</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link header__link--dead">Останній шанс</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Натхнення</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <section class="banner section-offset">
+  <div class="container">
+    <div class="banner__inner">
+      <div class="banner__offer">
+        <h1 class="sr-only">Онлайн магазин подарунків Darissimo</h1>
+        <h2 class="title banner__title">Обернути подарунок</h2>
+        <a class="banner__link" href="#">Замовити зараз!</a>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="novelty section-offset">
+  <div class="container">
+    <h2 class="title novelty__title">Купуйте новинки!</h2>
+    <div class="novelty__slider swiper">
+      <ul class="novelty__list swiper-wrapper">
+        <li class="novelty__item swiper-slide">
+          <article class="novelty__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Льодяники. Зі смаком м'яти</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">80 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="novelty__item swiper-slide">
+          <article class="novelty__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty2.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty2-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Різдвяна дрібничка. Автомобіль</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">120 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="novelty__item swiper-slide">
+          <article class="novelty__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty3.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty3-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Кружка. 450 мл</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">240 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="novelty__item swiper-slide">
+          <article class="novelty__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty4.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty4-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Настільний футбол</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">993 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="novelty__item swiper-slide">
+          <article class="novelty__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty5.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty5-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Різдвяна дрібничка</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">120 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="novelty__item swiper-slide">
+          <article class="novelty__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty6.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty6-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Lollipop. Смак полуниці</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">40 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="novelty__item swiper-slide">
+          <article class="novelty__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty7.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty7-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Мініатюрний мольберт із полотном</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">160 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="novelty__item swiper-slide">
+          <article class="novelty__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty8.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty8-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Обгортковий папір</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">120 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="novelty__item swiper-slide">
+          <article class="novelty__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty9.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty9-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Мішок для подарунків.</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">158 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="novelty__item swiper-slide">
+          <article class="novelty__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty10.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty10-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Капці</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">480 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="novelty__item swiper-slide">
+          <article class="novelty__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty11.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty11-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Окуляри для зору. + 3.5</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">120 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="novelty__item swiper-slide">
+          <article class="novelty__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty12.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty12-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Шкарпетки. 37-40</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">120 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+      </ul>
+      <div class="novelty__actions slider-actions">
+        <button class="novelty-btn slider-btn novelty-btn--prev slider-btn--prev" type="button"></button>
+        <button class="novelty-btn slider-btn novelty-btn--next slider-btn--next" type="button"></button>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="popular section-offset">
+  <div class="container">
+    <h2 class="title popular__title">Популярні категорії</h2>
+    <div class="popular__inner swiper">
+      <ul class="popular__list swiper-wrapper">
+        <li class="popular__item swiper-slide">
+  
+  <div class="popular__head"
+    style="background-image: url(./images/dist/pop/pop1.jpg); background-image: image-set(url('./images/dist/pop/pop1.avif') type('image/avif'),  url('./images/dist/pop/pop1.webp') type('image/webp'));">
+  </div>
+  
+
+  
+  <a class="popular__link" href="#"></a>
+  <span class="popular__name">Новинки</span>
+</li>
+
+        <li class="popular__item swiper-slide">
+  
+  <div class="popular__head"
+    style="background-image: url(./images/dist/pop/pop2.jpg); background-image: image-set(url('./images/dist/pop/pop2.avif') type('image/avif'),  url('./images/dist/pop/pop2.webp') type('image/webp'));">
+  </div>
+  
+
+  
+  <a class="popular__link" href="#"></a>
+  <span class="popular__name">Дрібнички</span>
+</li>
+
+        <li class="popular__item swiper-slide">
+  
+
+  
+  <div class="popular__head" style="background-image: url(./images/dist/pop/pop3.webp);"></div>
+  
+  <a class="popular__link" href="#"></a>
+  <span class="popular__name">Адвент</span>
+</li>
+
+        <li class="popular__item swiper-slide">
+  
+
+  
+  <div class="popular__head" style="background-image: url(./images/dist/pop/pop4.webp);"></div>
+  
+  <a class="popular__link" href="#"></a>
+  <span class="popular__name">Великі ігри</span>
+</li>
+
+        <li class="popular__item swiper-slide">
+  
+
+  
+  <div class="popular__head" style="background-image: url(./images/dist/pop/pop5.webp);"></div>
+  
+  <a class="popular__link" href="#"></a>
+  <span class="popular__name">Подарунки</span>
+</li>
+
+        <li class="popular__item swiper-slide">
+  
+
+  
+  <div class="popular__head" style="background-image: url(./images/dist/pop/pop6.webp);"></div>
+  
+  <a class="popular__link" href="#"></a>
+  <span class="popular__name">Різдвяні декорації</span>
+</li>
+
+        <li class="popular__item swiper-slide">
+  
+
+  
+  <div class="popular__head" style="background-image: url(./images/dist/pop/pop7.webp);"></div>
+  
+  <a class="popular__link" href="#"></a>
+  <span class="popular__name">Гаджети та ігри</span>
+</li>
+
+        <li class="popular__item swiper-slide">
+  
+
+  
+  <div class="popular__head" style="background-image: url(./images/dist/pop/pop8.webp);"></div>
+  
+  <a class="popular__link" href="#"></a>
+  <span class="popular__name">Різдвяні гуртки. Кераміка</span>
+</li>
+        <li class="popular__item swiper-slide">
+          <div class="popular__head" style="background-image: url(./images/dist/pop/pop9.webp);"></div>
+          <a class="popular__link" href="#"></a>
+          <span class="popular__name">Хобі . DIY</span>
+        </li>
+        <li class="popular__item swiper-slide">
+          <div class="popular__head" style="background-image: url(./images/dist/pop/pop10.webp);"></div>
+          <a class="popular__link" href="#"></a>
+          <span class="popular__name">Різдвяна вечірка</span>
+        </li>
+        <li class="popular__item swiper-slide">
+          <div class="popular__head" style="background-image: url(./images/dist/pop/pop11.webp);"></div>
+          <a class="popular__link" href="#"></a>
+          <span class="popular__name">Останній шанс!</span>
+        </li>
+      </ul>
+      <div class="popular__actions slider-actions">
+        <button class="popular-btn slider-btn popular-btn--prev slider-btn--prev" type="button"></button>
+        <button class="popular-btn slider-btn popular-btn--next slider-btn--next" type="button"></button>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="banners section-offset">
+  <div class="container">
+    <div class="banners__inner">
+      <div class="banners__box" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="700"
+        style="background-image: url('./images/dist/banners/2.webp');">
+        <div class="banners__offer">
+          <h3 class="banners__title title">Давайте грати</h3>
+          <div class="banners__text">
+            <p>
+              Досліджуйте нашу країну чудес іграшок
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="banners__box" data-aos="zoom-in-left" data-aos-duration="2000" data-aos-easing="linear"
+        style="background-image: url('./images/dist/banners/1.webp');">
+        <div class="banners__offer">
+          <h3 class="banners__title title">Давайте покувати</h3>
+          <div class="banners__text">
+            <p>
+              Подарунки потребують упаковки? Ознайомтеся з нашим величезним розмаїттям паперу, пакетів, коробок та
+              багато іншого.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="current section-offset">
+  <div class="container">
+    <h2 class="current__title title">Актуальні</h2>
+    <div class="current__slider swiper">
+      <ul class="current__list swiper-wrapper">
+        <li class="current__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current1.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current1-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Різдвяна дрібничка. Диско куля</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">120 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="current__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current2.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current2-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Піднос для напоїв</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">160 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="current__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current3.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current3-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Скарбничка свиня</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">200 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="current__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current4.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current4-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Піньята диско-куля</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">400 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="current__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current5.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current5-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+
+      
+      <span class="card__badge card__badge--bestceller">Бестселер</span>
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Кільце настрою. Дитяче</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">160 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="current__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current6.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current6-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+
+      
+      <span class="card__badge card__badge--bestceller">Бестселер</span>
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Дракон на дистанційному управлінні</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">1 200 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="current__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current7.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current7-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">В'язана шапка ельфа. Дитяча</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">400 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="current__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current8.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current8-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+
+      
+      <span class="card__badge card__badge--bestceller">Бестселер</span>
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Іграшковий кран машини</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">1 400 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="current__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current9.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current9-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Сумка</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">600 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="current__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current10.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current10-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Затишна лампа</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">400 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="current__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current11.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current11-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Очi</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">40 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="current__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current12.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current12-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Брошка</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">120 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+      </ul>
+      <div class="novelty__actions slider-actions">
+        <button class="current-btn slider-btn current-btn--prev slider-btn--prev" type="button"></button>
+        <button class="current-btn slider-btn current-btn--next slider-btn--next" type="button"></button>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="teen section-offset">
+  <div class="container">
+    <div class="teen__inner" style="background-image: url('./images/dist/teen/banner-teen-bg.webp');">
+      <div class="teen__offer">
+        <h3 class="teen__title title">Подарунки для підлітків</h3>
+        <div class="teen__text">
+          <p>
+            Знайдіть шлях до серця щасливого підлітка
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="teen__slider swiper">
+      <ul class="teen__list swiper-wrapper">
+        <li class="teen__item swiper-slide">
+          <article class="teen__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/teen/teen1.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/teen/teen1-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Бездротовий мікрофон з функцією ...</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">879 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="teen__item swiper-slide">
+          <article class="teen__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/teen/teen2.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/teen/teen2-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Ігри на брелоку</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">200 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="teen__item swiper-slide">
+          <article class="teen__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/teen/teen3.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/teen/teen3-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Ручка з цифровим вихованцем</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">200 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="teen__item swiper-slide">
+          <article class="teen__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/teen/teen4.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/teen/teen4-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+
+      
+      <span class="card__badge card__badge--bestceller">Бестселер</span>
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Міні-кошик для покупок</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">237 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="teen__item swiper-slide">
+          <article class="teen__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/teen/teen5.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/teen/teen5-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Затишна лампа</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">400 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="teen__item swiper-slide">
+          <article class="teen__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/teen/teen6.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/teen/teen6-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+
+      
+      <span class="card__badge card__badge--bestceller">Бестселер</span>
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Світлова коробка. А5</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">400 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="teen__item swiper-slide">
+          <article class="teen__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current5.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current5-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+
+      
+      <span class="card__badge card__badge--bestceller">Бестселер</span>
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Кільце настрою. Дитяче</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">160 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="teen__item swiper-slide">
+          <article class="novelty__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty4.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty4-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Настільний футбол</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">993 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="teen__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current8.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current8-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+
+      
+      <span class="card__badge card__badge--bestceller">Бестселер</span>
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Іграшковий кран машини</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">1 400 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="teen__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/current/current6.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/current/current6-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+
+      
+      <span class="card__badge card__badge--bestceller">Бестселер</span>
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Дракон на дистанційному управлінні</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">1 200 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+        <li class="teen__item swiper-slide">
+          <article class="current__card card">
+  <!-- <figure class="card__head" style="background-image: url(./images/dist/novelty/novelty1.webp);"> -->
+  <figure class="card__head" style="background-image: url(./images/dist/teen/teen7.webp);">
+    <a class="card__link" href="#"></a>
+    <!-- <div class="card__head--hide" style="background-image: url(./images/dist/novelty/novelty1-2.webp);"> -->
+    <div class="card__head--hide" style="background-image: url(./images/dist/teen/teen7-2.webp);">
+      <a class="card__head-link" href="#">Додаткова інформація</a>
+    </div>
+    <div class="card__top">
+      
+      <span class="card__badge card__badge--novelty">Новинка</span>
+      
+
+      
+      <button class="card__wish icon icon--heart" type="button"></button>
+    </div>
+  </figure>
+  <div class="card__info">
+    <!-- <h3 class="card__name">Льодяники. Зі смаком м'яти</h3> -->
+    <h3 class="card__name">Магнітний дартс</h3>
+    <!-- <span class="card__price">80 ₴</span> -->
+    <span class="card__price">400 ₴</span>
+    <button class="card__btn btn btn--accent" type="button">Додати до кошику</button>
+  </div>
+</article>
+        </li>
+      </ul>
+      <div class="novelty__actions slider-actions">
+        <button class="teen-btn slider-btn teen-btn--prev slider-btn--prev" type="button"></button>
+        <button class="teen-btn slider-btn teen-btn--next slider-btn--next" type="button"></button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="logo footer__logo" href="index.html">
+            <img class="logo__img" src="images/sprite.svg#logo" alt="Logo" width="175" height="50">
+          </a>
+          <ul class="footer__social social__list">
+            <li class="social__item">
+              <a class="social__link icon icon--facebook" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link icon icon--instagram" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link icon icon--tiktok" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link icon icon--youtube" href="#"></a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__title">Darissimo gift shop</h3>
+          <div class="footer__text">
+            <p>
+              Досліджуйте наш онлайн-всесвіт! Він наповнений тисячами товарів, а щотижня з'являються нові лімітовані
+              колекції. Речі,
+              які вам потрібні, речі, про які ви мрієте, речі про існування яких ви навіть не підозрювали. Життя це
+              вечірка, і ми
+              запрошуємо вас підіграти їй. Багате життя не варте цілого стану.
+            </p>
+          </div>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__title">Допомога та інформація</h3>
+          <ul class="footer__help">
+            <li class="footer__help-item">
+              <a class="footer__link" href="#">Пошук магазинів</a>
+            </li>
+            <li class="footer__help-item">
+              <a class="footer__link" href="#">Поширені запитання</a>
+            </li>
+            <li class="footer__help-item">
+              <a class="footer__link" href="#">Умови використання</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__title">Підпишіться на наші новини!</h3>
+          <div class="footer__text">
+            <p>
+              Введіть свою адресу електронної пошти, щоб отримати спеціальне повідомлення
+            </p>
+          </div>
+          <form action="#" class="footer__form">
+            <label class="footer__label">
+              <input type="email" class="footer__field user__field" placeholder="Email">
+            </label>
+            <label>
+              <select class="footer__select user__field" name="country" id="country">
+                <option disabled selected value="0">Виберіть країну</option>
+                <option value="1">Україна</option>
+                <option value="2">Польща</option>
+                <option value="3">Литва</option>
+                <option value="4">Латвія</option>
+              </select>
+            </label>
+            <button class="footer__form-btn btn btn--accent" type="submit">Підписатися</button>
+          </form>
+          <div class="footer__text footer__text--warning">
+            <p>
+              Зареєструвавшись, ви погоджуєтесь отримувати цифрові маркетингові повідомлення про нас та наші продукти, в
+              т.ч.
+              інформаційні бюлетені, інформація про кампанії, пропозиції та події. Ви завжди можете відкликати згоду,
+              перейшовши на
+              посилання внизу інформаційного бюлетеня.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-inner">
+        <div class="footer__bottom-text footer__text">
+          <p>
+            © 2018-2023 Інтернет-магазин подарунків Даріссімо. Всі права захищені <br>
+            Будь-яке використання/копіювання матеріалу сайту допускається лише з дозволу правовласника і лише з посиланням на
+            джерело.
+          </p>
+        </div>
+        <ul class="footer__payments payments">
+          <li class="payments__item">
+            <a class="payments__link" href="#" style="background-image: url(./images/sprite.svg#visa);"></a>
+          </li>
+          <li class="payments__item">
+            <a class="payments__link" href="#" style="background-image: url(./images/sprite.svg#mastercard);"></a>
+          </li>
+          <li class="payments__item">
+            <a class="payments__link" href="#" style="background-image: url(./images/sprite.svg#maestro);"></a>
+          </li>
+          <li class="payments__item">
+            <a class="payments__link" href="#" style="background-image: url(./images/sprite.svg#paypal);"></a>
+          </li>
+          <li class="payments__item">
+            <a class="payments__link" href="#" style="background-image: url(./images/sprite.svg#applepay);"></a>
+          </li>
+          <li class="payments__item">
+            <a class="payments__link" href="#" style="background-image: url(./images/sprite.svg#googlepay);"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</div>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
