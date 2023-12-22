@@ -33,12 +33,13 @@
       </search>
       <ul class="header__actions">
         <li class="header__actions-item">
-          <a class="header__actions-link icon icon--location" href="#"></a>
+          <a class="header__actions-link icon icon--location" href="https://maps.app.goo.gl/WEYn3mfDemVyDgSF9"
+            target="_blank"></a>
         </li>
         <li class="header__actions-item">
           <button class="header__actions-link icon icon--user" id="user-btn" type="button"></button>
           <div class="user-modal user">
-            <button class="user-modal__close icon icon--close" id="user-close" type="button"></button>
+            <button class="user-modal__close icon icon--close" id="close" type="button"></button>
             <h2 class="user-modal__title">Мій профіль</h2>
             <form class="user-modal__form user__form" action="#">
               <label class="user-modal__label user__label">
@@ -59,26 +60,59 @@
           </div>
         </li>
         <li class="header__actions-item">
-          <a class="header__actions-link header__actions-wish icon icon--heart" href="#">
+          <div class="header__actions-link header__actions-wish icon icon--heart" id="wish-list-btn">
             <span id="wish--span">0</span>
-          </a>
+          </div>
+          <div class="header__wish wish" id="wish-list">
+            <button class="wish__close icon icon--close" id="wish-close" type="button"></button>
+            <h3 class="wish__title title">Ваш список бажань:</h3>
+            <ul class="wish__list">
+
+
+            </ul>
+            <div class="wish__info">
+              <div class="wish__info-text">
+                <p>Всього:</p>
+                <span id="wish-money"></span>
+              </div>
+              <a class="wish__btn btn btn--accent" href="#">Сплатити</a>
+            </div>
+          </div>
         </li>
         <li class="header__actions-item">
-          <a class="header__actions-link header__actions-cart icon icon--cart" href="#">
-            <span id="cart--span">1</span>
-          </a>
+          <div class="header__actions-link header__actions-cart icon icon--cart" id="cart-list-btn">
+            <span id="cart--span">0</span>
+          </div>
+          <div class="header__cart cart" id="cart-list">
+            <button class="cart__close icon icon--close" id="cart-close" type="button"></button>
+            <h3 class="cart__title title">Ваша корзина:</h3>
+            <ul class="cart__list">
+
+            </ul>
+            <div class="cart__info">
+              <div class="cart__info-text">
+                <p>Всього:</p>
+                <span id="cart-money"></span>
+              </div>
+              <a class="cart__btn btn btn--accent" href="#">Сплатити</a>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
     <div class="header__bottom">
       <nav class="header__nav">
+        <button class="burger header__burger" id="burger" type="button">
+          <span class="burger__line"></span>
+          <span class="sr-only">Відкрити меню</span>
+        </button>
         <ul class="header__list">
           <li class="header__item">
-            <a class="header__link" href="novelty-page.html" >Новинки</a>
+            <a class="header__link" href="novelty-page.html">Новинки</a>
             <div class="header__submenu submenu">
               <ul class="submenu__list">
                 <li class="submenu__item">
-                  <a class="submenu__link submenu__link--active" href="novelty-page.html" >Новинки</a>
+                  <a class="submenu__link submenu__link--active" href="novelty-page.html">Новинки</a>
                 </li>
                 <li class="submenu__item">
                   <a href="#" class="submenu__link">Різдвяні прикраси</a>
@@ -813,9 +847,7 @@
     </div>
   </div>
 </footer>
-
-
-
+</div>
 </div>
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
